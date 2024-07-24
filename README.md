@@ -6,14 +6,14 @@ Building an identical CRUD task-app in each one of my current stacks. This proje
 
 ## Stacks
 
-[x] Flask - React
-[ ] Express - React
-[ ] Spring Boot - React
-[ ] NestJS - React
-[ ] NextJS
-[ ] Express - Angular
-[ ] Django
-[ ] HTML, CSS, and JavaScript
+- [x] Flask - React
+- [ ] Express - React
+- [ ] Spring Boot - React
+- [ ] NestJS - React
+- [ ] NextJS
+- [ ] Express - Angular
+- [ ] Django
+- [ ] HTML, CSS, and JavaScript
 
 ## App Plan
 
