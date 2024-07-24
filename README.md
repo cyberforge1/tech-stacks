@@ -44,6 +44,7 @@ Table todos {
 	primary_key: number,
 	text: string
 }
+```
 
 # Notes
 - Identical App
