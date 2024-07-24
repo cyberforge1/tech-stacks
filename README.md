@@ -6,14 +6,14 @@ Building an identical CRUD task-app in each one of my current stacks. This proje
 
 ## Stacks
 
-- Flask - React
-- Express - React
-- Spring Boot - React
-- NestJS - React
-- NextJS
-- Express - Angular
-- Django
-- HTML, CSS, and JavaScript
+[x] Flask - React
+[ ] Express - React
+[ ] Spring Boot - React
+[ ] NestJS - React
+[ ] NextJS
+[ ] Express - Angular
+[ ] Django
+[ ] HTML, CSS, and JavaScript
 
 ## App Plan
 
@@ -68,12 +68,10 @@ Table todos {
   - AWS EC2
 
 # API Design
-- **http**
-  ```plaintext
+
   GET /helloworld
   GET /
   GET /todo
   POST /todo
   PUT /todo/:id
   DELETE /todo/:id
-
