@@ -1,0 +1,36 @@
+import React, { useState } from 'react';
+
+interface TodoFormProps {
+  onSubmit: (title: string, description: string) => void;
+  initialTitle?: string;
+  initialDescription?: string;
+  buttonText: string;
+}
+
+const TodoForm: React.FC<TodoFormProps> = ({ onSubmit, initialTitle = '', initialDescription = '', buttonText }) => {
+  const [title, setTitle] = useState(initialTitle);
+  const [description, setDescription] = useState(initialDescription);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSubmit(title, description);
+    setTitle('');
+    setDescription('');
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="Title"
+        required
+      />
+      <button type="submit">{buttonText}</button>
+    </form>
+  );
+};
+
+export default TodoForm;
