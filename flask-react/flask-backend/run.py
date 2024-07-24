@@ -1,4 +1,4 @@
-# project/run.py
+# flask-backend/run.py
 
 from app import app
 

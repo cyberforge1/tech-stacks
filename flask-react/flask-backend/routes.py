@@ -1,4 +1,4 @@
-# project/routes.py
+# flask-backend/routes.py
 
 from flask import Blueprint, jsonify, request
 from flask_mysqldb import MySQL

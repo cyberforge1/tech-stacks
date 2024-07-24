@@ -1,0 +1,24 @@
+# docker-compose.yml
+
+services:
+  flask-backend:
+    build: ./flask-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    networks:
+      - app-network
+
+  react-frontend:
+    build: ./react-frontend
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
