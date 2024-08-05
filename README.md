@@ -15,9 +15,9 @@ A collection of different tech stacks to build an identical CRUD application wit
 - [ ] Django
 - [ ] HTML, CSS, and JavaScript
 
-## Project MVP
+# Project MVP
 
-- MVP for Frontend / Backend / Database / Container / Cloud Deployment
+- Frontend / Backend / Database / Container / Cloud Deployment
 
 ## Frontend
 
