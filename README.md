@@ -77,18 +77,27 @@ Using Docker to:
 - Docker - Kubernetes
 - AWS EC2 (Autoscaling and Load Balancing)
 
-# Notes
+# Branches
+
+- development: locally running applications 
+- docker: applications running in a container and configured with Docker
+- elastic-beanstalk: applications configured and deployed with Elastic Beanstalk
+- aws-ecs: applications configured and deployed with AWS ECR & AWS ECS
+- aws-ec2: applications configured and deployed with AWS EC2
+- kubernetes: applications configured and deployed with Kubernetes
+
+# General Notes
 
 - Frontends/Backends/Databases self-contained and modular (providing re-use and rapid development)
 - No Styling
 - Identical Application
 
-# Potential Future Additions
+# Potential Future Integrations
 
 - PostgreSQL
 - Redis
 - S3
-- Mong0DB
+- MongoDB
 - AWS Lambda and API Gateway
 
 ## Contact Me
