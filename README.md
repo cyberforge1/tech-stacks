@@ -1,9 +1,8 @@
 # Technology Stacks MVP
 
-## MVP Description
+## Description
 
-Utilizing a variety of tech stacks to build an identical CRUD application with modular frontend, backend, database, and deployment components.
-
+A collection of different tech stacks to build an identical CRUD application with modular frontend, backend, database, and deployment components.
 
 ## Tech Stacks
 
