@@ -17,8 +17,6 @@ A collection of different tech stacks to build an identical CRUD application wit
 
 # Project MVP
 
-- Frontend / Backend / Database / Container / Cloud Deployment
-
 ## Frontend
 
 - (/) A landing page that contains:
@@ -72,7 +70,7 @@ Using Docker to:
 - create a Docker compose file (/docker-compose.yml)
 
 
-## Deployment Strategies
+## Cloud Deployment
 
 - AWS Elastic Beanstalk 
 - Docker - AWS ECR - AWS ECS (Fargate)
