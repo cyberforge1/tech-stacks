@@ -1,4 +1,4 @@
-# Technology Stacks MVP
+# Tech Stack Collection
 
 ## Description
 
