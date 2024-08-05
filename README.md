@@ -2,9 +2,10 @@
 
 ## MVP Description
 
-Building an identical CRUD task-app in each one of my current stacks. This project will build understanding in these technologies and serve as a blueprint for more complex processes.
+Utilizing a variety of tech stacks to build an identical CRUD application with modular frontend, backend, database, and deployment components.
 
-## Stacks
+
+## Tech Stacks
 
 - [x] Flask - React
 - [ ] Express - React
@@ -15,63 +16,90 @@ Building an identical CRUD task-app in each one of my current stacks. This proje
 - [ ] Django
 - [ ] HTML, CSS, and JavaScript
 
-## App Plan
+## Project MVP
 
-### Backend
+- MVP for Frontend / Backend / Database / Container / Cloud Deployment
 
-- URL endpoint to test access
-- A value passed to the frontend statically (without database access)
-- A create endpoint
-- A read endpoint
-- An update endpoint
-- A delete endpoint
+## Frontend
 
-### Frontend
+- (/) A landing page that contains:
+    - value passed from the backend (ex. Home Page)
+    - button redirecting to the form page
 
-- A form page with a CRUD form
-- Dynamic display of todo items
-- Buttons to create, update, and delete
+- (/form) A form page that contains:
+    - title	
+    - input field
+    - ‘add todo’ button
+    - dynamic display of todos in the database
+    - dynamically rendered ‘update todo’ button
+    - dynamically rendered delete todo’ button
 
-### Database
+## Backend
 
-- Filled with one value automatically
-- Extremely simple design
 
-Example:
+- URL endpoint to test access (ex. /helloworld)
+- A value passed to the frontend directly as a string from the backend (w/o db access)
+- Create, read, update and delete endpoints
 
-```sql
-Table todos {
-	primary_key: number,
-	text: string
-}
+```http
+GET /helloworld
+GET /
+GET /todo
+GET /todo/:id
+POST /todo
+PUT /todo/:id
+DELETE /todo/:id
 ```
 
-# Notes
-- Identical App
-- No Styling
-- Have frontends/backends and databases self-contained and automatically interchangeable
+## Database
 
-# Additional Technology
-- Docker
-- AWS Services
+- Filled with one value automatically 
+- Transitioning from a local to a cloud-base database upon deployment
+- Either SQL or NoSQL solutions
+- Fundamentally simple design
+
+```sql
+CREATE TABLE todos ( 
+primary_key INT PRIMARY KEY, 
+text VARCHAR(255) 
+);
+```
+
+## Container
+
+Using Docker to:
+- create a frontend image (/backend/Dockerfile)
+- create a backend image (/frontend/Dockerfile)
+- create a Docker compose file (/docker-compose.yml)
+
+
+## Deployment Strategies
+
+- AWS Elastic Beanstalk 
+- Docker - AWS ECR - AWS ECS (Fargate)
+- Docker - Kubernetes
+- AWS EC2 (Autoscaling and Load Balancing)
+
+# Notes
+
+- Frontends/Backends/Databases self-contained and modular (providing re-use and rapid development)
+- No Styling
+- Identical Application
+
+# Potential Future Additions
+
 - PostgreSQL
 - Redis
-- Heroku
+- S3
+- Mong0DB
+- AWS Lambda and API Gateway
 
-# Specifics
-- Serverless Technology
-  - AWS Elastic Beanstalk
-  - AWS S3
-  - AWS Lambda
-  - AWS ECR
-  - AWS ECS
-  - AWS EC2
-
-# API Design
-
-  GET /helloworld
-  GET /
-  GET /todo
-  POST /todo
-  PUT /todo/:id
-  DELETE /todo/:id
+## Contact Me
+- Visit my [LinkedIn](https://www.linkedin.com/in/obj809/) for more details.
+- Check out my [GitHub](https://github.com/cyberforge1) for more projects.
+- Or send me an email at obj809@gmail.com
+<br />
+Thanks for your interest in this project. Feel free to reach out with any thoughts or questions.
+<br />
+<br />
+Oliver Jenkins © 2024
